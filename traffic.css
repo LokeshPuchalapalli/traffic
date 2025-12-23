@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f242d;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ef;
+}
+
+/* Home Section */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content p {
+    font-size: 16px;
+}
+
+.home-img img {
+    max-width: 450px;
+}
+
+/* Social Media */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.3s ease;
+}
+
+.social-media a:hover {
+    background: #0ef;
+    color: #1f242d;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #1f242d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Prediction Section */
+#prediction {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    padding: 90px 8%;
+    text-align: center;
+    color: #fff;
+}
+
+.prediction-subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+.prediction-card {
+    max-width: 420px;
+    margin: auto;
+    background: rgba(2, 6, 23, 0.9);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.25);
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #38bdf8;
+    font-size: 1rem;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.predict-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.risk-output {
+    margin-top: 25px;
+    min-height: 40px;
+}
+
+#result {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-content h1 { font-size: 50px; }
+    .home-content p { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+    .prediction-card { padding: 25px; }
+}
+
+/* =========================
+   Contact Section Styling
+========================= */
+#contact {
+    padding: 90px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    color: #94a3b8;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-card {
+    background: rgba(2, 6, 23, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.3s;
+    box-shadow: 0 15px 30px rgba(56, 189, 248, 0.25);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.4);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #0ef;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-card p a:hover {
+    color: #0ef;
+}
+
+h2 {
+    color: #0ea5e9;
+}

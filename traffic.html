@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Prediction</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="traffic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- JS -->
+    <script src="traffic.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Accident Prediction</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#prediction">Prediction</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hello, It's Me.</h1>
+            <h3>I'm your Traffic Accident Predictor,<br>taking a look at your ride's safety.</h3>
+            <h3><span class="multiple-text"></span></h3>
+            <p>Contact for more information.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-solid fa-message"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="#prediction" id="prediction-btn" class="button">Prediction Here</a>
+        </div>
+        <div class="home-img">
+            <img src="Screenshot_2025-12-16_191855-removebg-preview.png" alt="Traffic accident prediction illustration">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Accident severity refers to the degree of harm, injury, or damage resulting from
+            traffic incidents. It is influenced by driver behavior, vehicle condition,
+            road environment, and weather conditions. Modern AI and Machine Learning
+            techniques help predict accident severity to improve road safety.
+        </p>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="prediction">
+        <h2>🚦 Road Accident Risk Prediction</h2>
+        <p class="prediction-subtitle">Enter driving conditions to check accident risk level</p>
+
+        <div class="prediction-card">
+            <form id="prediction-form">
+                <div class="input-box">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <input type="number" id="speed" placeholder="Vehicle Speed (km/h)" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <select id="weather">
+                        <option value="clear">Clear Weather</option>
+                        <option value="rain">Rainy</option>
+                        <option value="fog">Foggy</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-road"></i>
+                    <select id="road">
+                        <option value="good">Good Road</option>
+                        <option value="wet">Wet Road</option>
+                        <option value="poor">Poor Road</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="predict-btn">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i> Predict Risk
+                </button>
+            </form>
+
+            <div class="risk-output">
+                <h3 id="result"></h3>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-subtitle">Have questions or suggestions? Reach out!</p>
+
+    <div class="contact-cards">
+
+        <div class="contact-card">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <h3>Call Me</h3>
+            <p><a href="tel:+9194xxxxxx20">+91 94xxxxxx20</a></p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <h3>Email Me</h3>
+            <p><a href="mailto:accidentprediction@gmail.com">accidentprediction@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-whatsapp contact-icon"></i>
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/9194xxxxxx20" target="_blank">Chat Now</a></p>
+        </div>
+
+    </div>
+</section>
+
+
+</body>
+</html>
